@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet">
+  <title>Patron Saint</title>  
+
+</head>
+<body>
+
+   <ul id="nav">
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+</ul>
+        
+        
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+ <div id="container">
+     <img src="./images/Poe.jpg" alt="Edgar Allan Poe photograph" height= "400px" width="527px">
+    </div>
+     <p>Edgar Allan Poe is the unofficial patron saint of Halloween.  He was a master of the macabre and wrote the famous poem, The Raven, which begins:</p>
+     <p id="raven-quote">
+        <a href="https://www.poetryfoundation.org/poems/48860/the-raven">Once upon a midnight dreary, while I pondered, weak and weary,<br>
+Over many a quaint and curious volume of forgotten lore&mdash;</a>
+     </p>
+    <div id="page2-sidebar">
+        <img src="./images/raven.jpg" alt="raven" height="100px" width="300px" >
+    
+
+<div class="footer">
+    <div id="grad1"></div>
+    <img src="./images/large-skull.png" alt="Skull" height="42" width="42">
+    
+    <p>Countdown Clock Until Halloween 2018</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+  
+</div>
+    
+    
+
+
+</body>
+</html> 

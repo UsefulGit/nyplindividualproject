@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet">
+   <title>Contact Us</title> 
+
+</head>
+<body>
+    
+    
+
+
+
+
+
+   <ul id="nav">
+   
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+
+</ul>
+        
+        
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+ <div id="container">
+     <img src="./images/graveyard.jpg" alt="Graveyyard" height="420px" width="600px">
+    
+    <div id="sidebar">
+      <!--  <img src="./images/cat-silhouette.jpg" alt="cat silhouette" height="250px" width="200px"> 
+    </div> -->
+    <div id="content">
+        <p>Don't be distressed if it takes a while for us to get back to you.</p>
+        
+        <!--Meanwhile, amuse yourself/check out these Halloween movies and books.
+        
+        Table? Skull ratings.-->
+    </div>
+</div>
+
+<div class="footer">
+    <div id="grad1"></div>
+    <img src="./images/large-skull.png" alt="Skull" height="42" width="42">
+    
+<p>Countdown Clock Until Halloween 2018</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+  
+</div>
+    
+    
+
+
+
+    
+
+
+</body>
+</html> 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--<script src="myscripts.js"></script>
+Move JavaScript for Countdown Timer to an external JS page?
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet"> 
+   <title>Home</title> 
+
+</head>
+<body>
+
+
+
+<div id="banner-container">
+  <img src="./images/pumpkin.jpg" alt="Halloween Pumpkin with Suprised Expression" width="500px" height="300px">
+  
+  
+  <div class="centered">APOKRIESPHILIA</div>
+</div>
+
+   <ul id="nav">
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+</ul>
+        
+   <div id="subtitle">Because Halloween is too much fun to celebrate only once a year.</div>     
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+ 
+     
+ <div id="container">
+    <div id="home-sidebar">
+        <ul class="skull">
+          <h3>Halloween-related Terms</h3>
+          <li><a href="https://en.wikipedia.org/wiki/Jack-o%27-lantern">Jack-o'-lantern</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Samhain">Samhain</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+            
+        </ul>
+        
+    </div>
+    <div id="content">
+        <p>What is exactly is <em>"Apokriesphilia"</em>, you ask?  An excellent question.  It is a made-up word formed by combining the Greek word for Halloween, "&Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf;," with the Greek "philia" suffix, which means "a love of." If you'd like to hear how &Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf; is pronounced, click <a href="https://www.google.com/search?q=greek+word+for+halloween&oq=gree&aqs=chrome.3.69i65j69i60j69i57j69i59j35i39j0.12533j0j7&sourceid=chrome&ie=UTF-8">here</a>.  Therefore, it means "the love of Halloween."</p>
+        </p>
+   <!--<img src="./images/halloween-tree.jpg" width="500px" height="150px">-->
+   </div>
+    
+    </div>
+
+
+<div class="footer">
+    <div id="grad1"></div>
+    <img src="./images/large-skull.png" alt="Skull" height="42" width="42">
+    
+    <p>Countdown Clock Until Halloween 2018</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+  
+</div>
+    
+    
+
+
+</body>
+</html> 
