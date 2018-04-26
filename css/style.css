@@ -1,4 +1,17 @@
+/* GLOBAL STYLES */
+
+
+
 /*HEADER IMAGE*/
+
+/* 
+********************************************************************
+25 April 2018
+
+The code in the "header-container" directly below initially was used to create an image of a pumpkin with text over it with html and css. It has been superseded by a Photoshop image because it was difficult to center. 
+********************************************************************
+*/
+
 
 /*#header-container {
     position: relative;
@@ -18,10 +31,6 @@ img {
     filter: alpha(opacity=70); /* For IE8 and earlier 
 }
 
-
-
-
-
 .centered {
     position: absolute;
     top: 50%;
@@ -31,9 +40,13 @@ img {
     font-size: 60px;
 } */
 
-/***********************************************************
-Code below works for centering image; use for now. 24 April 2018, 8 p.m.
-************************************************************/
+
+/*
+**********************************************************
+24 April 2018, 8 p.m.
+Code below works for centering Photoshop image in header; use for now. 
+***********************************************************
+*/
 .center {
     display: block;
     margin-left: auto;
@@ -68,13 +81,12 @@ text-decoration:none;
     font-family: 'Rokkitt', serif;
     text-transform: UPPERCASE;
     text-shadow: 10px 10px 10px #FF8300;
-    background-color: white;
+    background-color: #fff;
     overflow: hidden;
 }
 
 #nav a {
-    float: left
-    ;
+    float: left;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -144,6 +156,9 @@ img {
 
 /*SIDEBAR*/
 
+/*
+************************************************************
+First layout attempt was one column and sidebar, trying three columns now
 h3 {
     font-size:22px;
 }
@@ -153,8 +168,7 @@ h3 {
     width: 200px;
     margin-top: 130px;
     background-color: #FF8300; 
-    /* Wanted to do gradient, as in footer  */
-    
+   
     font-size: 20px;
     list-style:none;
     text-decoration: none;
@@ -166,7 +180,7 @@ h3 {
 
 
 ul.skull {
-/*list-style-image:src=("./images/small-skull.jpg")*/
+/*list-style-image:src=("./images/small-skull.jpg")
 line-height: 20px;
 }
 
@@ -174,6 +188,9 @@ line-height: 20px;
     overflow: hidden;
     background: #FFF;
 }
+
+**********************************************************
+*/
 
 /* CONTENT PAGE 2 [CURRENTLY "PATRON SAINT"]*/
 
