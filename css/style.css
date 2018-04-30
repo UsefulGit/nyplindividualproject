@@ -1,19 +1,31 @@
 /* GLOBAL STYLES */
 
-
+body, html {
+  font-size: 20px;
+}
 
 /*HEADER IMAGE*/
 
 /* 
 ********************************************************************
+
 25 April 2018
 
-The code in the "header-container" directly below initially was used to create an image of a pumpkin with text over it with html and css. It has been superseded by a Photoshop image because it was difficult to center. 
+The code in the "header-container" directly below initially was used to
+create an image of a pumpkin with text over it with html and css. It has
+been superseded by a Photoshop image because it was difficult to center. 
+The text on the image was Google Fonts "Special Elite," so with the use of 
+the "Rokkitt" font, the requirement of using two Google Fonts has been met.
+
 ********************************************************************
 */
 
 
-/*#header-container {
+/*
+*********************************************************************
+[Code for image created with CSS,  now replaced by Photoshop image.]
+
+#header-container {
     position: relative;
     text-align: center;
     color: #FFF;
@@ -38,12 +50,14 @@ img {
     
     transform: translate(-50%, -50%);
     font-size: 60px;
-} */
+} 
+**************************************************************************************
+*/
 
 
 /*
 **********************************************************
-24 April 2018, 8 p.m.
+29 April 2018, 7 p.m.
 Code below works for centering Photoshop image in header; use for now. 
 ***********************************************************
 */
@@ -56,9 +70,22 @@ Code below works for centering Photoshop image in header; use for now.
 
 img {
     border:2px solid #021a40;
+    margin-bottom: 30px;
 }
 
-/*HORIZONTAL NAVIGATION BAR*/
+.subtitle {
+    font-family: 'Rokkitt', serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center
+}
+
+/*
+************************************************************
+HORIZONTAL NAVIGATION BAR
+************************************************************
+*/
 
 #nav {
 width:750px;
@@ -106,39 +133,49 @@ text-decoration:none;
     color: #A4AB96;
 }
 
-#subtitle {
-    font-family: 'Rokkitt', serif;
-    font-style: italic;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center
-}
+
   
 
-/*HORIZONTAL RULE*/
+
+/*
+***************************************************************
+HORIZONTAL RULE BELOW NAVIGATION BAR
+**************************************************************
+*/
 
 hr.style1{
 	border-top: 1px solid #FF8300;
 }
 
-body, html {
-  font-size: 20px;
-}
+
+
 
 /*MAIN COLUMN*/
 
+/*
+***************************************
 #container {
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
     font-family: Rokkitt, serif;
     font-size: 40px;
    <!-- line-height: TK-->
  }
+ 
+ **************************************
+ */
 
 #pumpkin-tree {
-     margin: auto;
-    width: 90%;
-    padding: 40px;
+   
+    
+    width: 300px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    
 }
 
 /**************************
@@ -192,9 +229,8 @@ line-height: 20px;
 **********************************************************
 */
 
-/* CONTENT PAGE 2 [CURRENTLY "PATRON SAINT"]*/
+/* CONTENT PAGE 2 [CURRENTLY, "PATRON SAINT"]*/
 
-/*Want to put border around Poe photo alone */
 
 #poe-photo {
     display: block;
@@ -202,7 +238,8 @@ line-height: 20px;
     margin-right: auto;
     padding:0;
     width: 50%;
-    border: 5px solid black;
+   
+    
 }
 
 #raven-quote {
@@ -238,25 +275,16 @@ line-height: 20px;
     color: #A4AB96;
 }    
    
-    
-   
-
-
-
-
-
-
-
-
-
-#page2-sidebar{
+  
+#container{
     
     background-color: #FFF;
-    background-image: url("images/raven.jpg");
+    background-image: url("./images/raven.jpg");
+    
 }
    
    
- /* CONTENT PAGE 4 [CURRENTLY "RESOURCES"]*/ 
+ /* CONTENT PAGE 3 [CURRENTLY, "RESOURCES"]*/ 
    
 #scary-movie {
         border-collapse: collapse;
@@ -280,7 +308,7 @@ th {
     color: white;
 }
 
-/* CONTENT PAGE 4 [CURRENTLY "CONTACT US"]*/
+/* CONTENT PAGE 4 [CURRENTLY, "CONTACT US"]*/
 #contact-form {
     font-style: italic;
     font-size: 20px;
@@ -289,10 +317,6 @@ th {
     
 
 
-/* IMAGE ATTRIBUTION PAGE 5 */
-#image-attribution { 
-    background-image: url("images/witch.jpg");
-}
 
 
 /* FOOTER */

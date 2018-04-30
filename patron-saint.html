@@ -7,7 +7,26 @@
   <title>Apokriesphilia - Patron Saint</title>  
 
 </head>
+
 <body>
+    
+    <!--
+    ****************************************************
+    Banner Image 
+    ****************************************************
+    -->
+    
+   
+    <img src="./images/Pumpkin3.png" alt="Colorful vintage Image of pumpkin with surprised expression." class="center" style="width:650px;height:400px;" title="The Love  of Halloween.">
+    
+  <div class="subtitle">Because Halloween is too much fun to celebrate only once a year.</div>    
+
+<!--
+    ****************************************************
+    Horizontal Navigation Bar
+    ****************************************************
+    -->
+
 
    <ul id="nav">
   <li><a href="index.html">home</a></li> 
@@ -22,10 +41,12 @@
 <hr class="style1">
  </br> 
  
+ 
+ 
  <section>
  <div id="container">
      <div id="poe-photo">
-    <a href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe"><img src="./images/Poe.jpg" alt="Edgar Allan Poe photograph" height= "538px" width= "404px"  title="Our Patron Saint"></a>
+    <a href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe"><img src="./images/oval-edgar-allan-poe-photo.png" alt="Edgar Allan Poe photograph" class="center"height= "538px" width= "404px"  title="Our Patron Saint"></a>
     </div>
 
     </div>
@@ -36,55 +57,32 @@
 Over many a quaint and curious volume of forgotten lore&mdash;</a>
      </p>
      
+     </section>
+     
+    <!--
+    
+    *******************************************************************************
     <div id="page2-sidebar">
         <img src="./images/raven.jpg" alt="raven" height="500px" title="Still working on this image.">
      </div>  
-     </section>
+     
+     *******************************************************************************
+     -->
+     
     
 
-<div class="footer">
-    <div id="grad1"></div>
-    <img src="./images/large-skull.png" alt="Skull" height="42" >
-    
-    <p>Countdown Clock Until Halloween 2018</p>
+ <footer>
+        <section>
+            <div id="footer">
+            <p class="footer">Countdown Clock Until Halloween</p>
   <p id="countdown">Countdown Clock Until Halloween 2018</p>
   
+  <script src="js/myscripts.js"></script>
   
-  <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="countdown"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
-
-  
-</div>
-    
-    
+            <strong>&copy; 2018 </strong>
+            </div>
+        </section>  
+    </footer>    
 
 
 </body>

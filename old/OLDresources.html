@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet"> 
+   <title>Apokriesphilia - Resources</title> 
+
+</head>
+<body>
+
+
+
+
+   <ul id="nav">
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+</ul>
+        
+   
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+ <div>
+   
+   <p>Here are some resources for continuing your Halloween education.</p>
+     
+   <!--Table-->
+   <table id="scary-movie">
+  <tr>
+    <th>Movie</th>
+    <th>Year</th>
+    <th>Scariness Rating</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt0074285/">Carrie</a></td>
+    <td>1976</td>
+    <td><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"></td>
+    </tr>
+  
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt0021884/?ref_=nv_sr_5">Frankenstein</a></td>
+    <td>1931</td>
+    <td><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"></td>
+    </tr>
+  
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt5052448/?ref_=nv_sr_1">Get Out</a></td>
+    <td>2017</td>
+    <td><img src="./images/small-skull.jpg"></td>
+  </tr>
+  
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt0077651/?ref_=nv_sr_3">Halloween</a></td>
+    <td>1978</td>
+    <td><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"></td>
+    </tr>
+  
+  
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt0107688/?ref_=nv_sr_2">The Nightmare Before Christmas</a></td>
+    <td>1993</td>
+    <td><img src="./images/small-skull.jpg">
+    <img src="./images/small-skull.jpg">
+    </td>
+    </tr>
+  
+  <tr>
+    <td><a href="https://www.imdb.com/title/tt0117571/?ref_=fn_al_tt_2">Scream</a></td>
+    <td>1996</td>
+    <td><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"><img src="./images/small-skull.jpg"></td>
+    </tr>
+    <tr>
+    <td><a href="https://www.imdb.com/title/tt0162661/?ref_=nv_sr_2">Sleepy Hollow</a></td>
+    <td>1999</td>
+    <td><img src="./images/small-skull.jpg">
+    <img src="./images/small-skull.jpg">
+    </td>
+  </tr>
+  
+  
+  
+</table>
+    
+ 
+
+  
+  </div>
+
+ 
+
+</div>
+    
+  
+    
+    
+  
+ 
+
+<div class="footer">
+    <div id="grad1"></div>
+    <img src="./images/large-skull.png" alt="Skull" height="42" width="42">
+    
+    <p>Countdown Clock Until Halloween 2018</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+  
+</div>
+    
+    
+
+
+</body>
+</html> 

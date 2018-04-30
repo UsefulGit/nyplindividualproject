@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--<script src="myscripts.js"></script>
+Move JavaScript for Countdown Timer to an external JS page?
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet"> 
+   <title>Apokriesphilia - Halloween Central 356 days a year!</title> 
+
+</head>
+<body>
+
+
+
+<div id="header-container">
+  <a href="index.html"><img src="./images/pumpkin.jpg" alt="Image of Vintage Halloween Pumpkin with Suprised Expression" width="500px" height="300px" title="The Love of Halloween"></a>
+  
+  
+
+  
+  <div class="centered">APOKRIESPHILIA</div>
+</div>
+
+   <ul id="nav">
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+</ul>
+        
+   <div id="subtitle">Because Halloween is too much fun to celebrate only once a year.</div>     
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+ 
+  <aside>   
+ <div id="container">
+    <div id="home-sidebar">
+        <ul class="skull">
+          <h3>Halloween-related Terms</h3>
+          <li><a href="https://en.wikipedia.org/wiki/Jack-o%27-lantern">Jack-o'-lantern</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Samhain">Samhain</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Samhain">Samhain</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Day_of_the_Dead">Day of the Dead</a></li>
+          <img src="./images/witch.jpg" width="160px">
+            
+        </ul>
+        </div>
+        </aside>
+    <div id="content">
+        <p>
+            Welcome. What is exactly is <em><span style="font-weight:bold">&#8220;Apokriesphilia,&#8221;</span></em> you ask?  An excellent question.  It is an invented word formed by combining the Greek word for Halloween,&#8220;&Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf;,&#8221;(Ap&#x03CC;kries) with the Greek &#8220;philia&#8221; suffix, which means&#8220;a love of.&#8221; Therefore, it means &#8220;the love of Halloween.&#8221;  How is &Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf; <a href="https://www.google.com/search?q=greek+word+for+halloween&oq=gree&aqs=chrome.3.69i65j69i60j69i57j69i59j35i39j0.12533j0j7&sourceid=chrome&ie=UTF-8"><span style="color:#FF8300;font-weight:bold">pronounced</span></a>?  </p>
+       </div> 
+  <div id="pumpkin-tree">
+      <img src="./images/halloween-tree.jpg" width="700px" alt="Tree decorated with Jack-o'-lanterns with a black cat and a crescent moon." title="Classic symbols of the holiday: A cat, Jack-o'-lanterns, and the moon.">
+      </div>
+   
+    
+    </div>
+
+
+<div class="footer">
+    <div id="grad1"></div>
+    <img src="./images/large-skull.png" alt="Skull" height="42" width="42">
+    
+    <p>Countdown Clock Until Halloween 2018</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+  
+</div>
+    
+    
+
+
+</body>
+</html> 
