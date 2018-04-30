@@ -4,6 +4,15 @@ body, html {
   font-size: 20px;
 }
 
+#footer {
+    border-top: 5px solid black;
+    padding-top: 20px;
+    text-align: center;
+    background-color:  #FF8300;
+    height: 150px;
+}
+
+
 /*HEADER IMAGE*/
 
 /* 
@@ -14,8 +23,7 @@ body, html {
 The code in the "header-container" directly below initially was used to
 create an image of a pumpkin with text over it with html and css. It has
 been superseded by a Photoshop image because it was difficult to center. 
-The text on the image was Google Fonts "Special Elite," so with the use of 
-the "Rokkitt" font, the requirement of using two Google Fonts has been met.
+
 
 ********************************************************************
 */
@@ -125,6 +133,7 @@ text-decoration:none;
 #nav a:hover {
     background-color: #FF8300;
     color: black;
+    font-size:120%;
 }
 
 
@@ -231,6 +240,13 @@ line-height: 20px;
 
 /* CONTENT PAGE 2 [CURRENTLY, "PATRON SAINT"]*/
 
+.splash {
+ background-image: url("../images/50percentraven.png");
+background-repeat: 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 #poe-photo {
     display: block;
@@ -274,7 +290,8 @@ line-height: 20px;
     background-color: white;
     color: #A4AB96;
 }    
-   
+  
+  
   
 #container{
     
@@ -309,6 +326,39 @@ th {
 }
 
 /* CONTENT PAGE 4 [CURRENTLY, "CONTACT US"]*/
+
+/*
+********************************************************
+.contact {
+  width: 600px;
+  height: 600px;
+  
+}.simple-linear {
+  background: linear-gradient(#FF8300,#FFFF33);
+}
+
+*********************************************************
+
+*/
+    
+    
+    
+    
+/*
+********************************************
+background-image: url("../images/60percentcrownedskull.png");
+ background-repeat: 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+**********************************************************
+*/
+
+
+
+
 #contact-form {
     font-style: italic;
     font-size: 20px;
@@ -355,10 +405,3 @@ p {
 */
 
 
-#footer {
-    border-top: 5px solid black;
-    padding-top: 20px;
-    text-align: center;
-    background-color:  #FF8300;
-    height: 150px;
-}
