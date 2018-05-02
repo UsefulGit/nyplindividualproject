@@ -1,11 +1,45 @@
+/* 
+********************************************************************
+
+1 May 2018, 23:20
+
+
+
+********************************************************************
+*/
+
+
+
+
 /* GLOBAL STYLES */
 
 body, html {
-  font-size: 20px;
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
 }
 
-#footer {
-    border-top: 5px solid black;
+.subtitle {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center
+}
+
+p.initial-letter:first-child:first-letter {
+  color: #FF8300;
+  float: left;
+  font-family: Rokkitt;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+
+footer{
+    border-top: 2px solid black;
     padding-top: 20px;
     text-align: center;
     background-color:  #FF8300;
@@ -13,62 +47,20 @@ body, html {
 }
 
 
-/*HEADER IMAGE*/
-
-/* 
-********************************************************************
-
-25 April 2018
-
-The code in the "header-container" directly below initially was used to
-create an image of a pumpkin with text over it with html and css. It has
-been superseded by a Photoshop image because it was difficult to center. 
+/*BANNER IMAGE*/
 
 
-********************************************************************
-*/
-
-
-/*
-*********************************************************************
-[Code for image created with CSS,  now replaced by Photoshop image.]
-
-#header-container {
-    position: relative;
-    text-align: center;
-    color: #FFF;
-    height: 300px;
-    width: 600px;
-    border:4px solid black;
-    font-family: 'Special Elite', cursive;
-    font-weight: 900;
-    text-shadow: 4px 4px 5px #8B0000;
-}
-
-img {
-    position: center;
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier 
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-} 
-**************************************************************************************
-*/
 
 
 /*
 **********************************************************
 29 April 2018, 7 p.m.
-Code below works for centering Photoshop image in header; use for now. 
+Code below works for centering Photoshop image in header; replaces image with text
+created with CSS. 
 ***********************************************************
 */
+
+
 .center {
     display: block;
     margin-left: auto;
@@ -81,13 +73,7 @@ img {
     margin-bottom: 30px;
 }
 
-.subtitle {
-    font-family: 'Rokkitt', serif;
-    font-style: italic;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center
-}
+
 
 /*
 ************************************************************
@@ -113,7 +99,6 @@ text-decoration:none;
 	
 
 #nav {
-    font-family: 'Rokkitt', serif;
     text-transform: UPPERCASE;
     text-shadow: 10px 10px 10px #FF8300;
     background-color: #fff;
@@ -161,84 +146,25 @@ hr.style1{
 
 /*MAIN COLUMN*/
 
-/*
-***************************************
-#container {
-    width: 600px;
-    margin: 0 auto;
-    font-family: Rokkitt, serif;
-    font-size: 40px;
-   <!-- line-height: TK-->
- }
- 
- **************************************
- */
+
 
 #pumpkin-tree {
    
     
     width: 300px;
-    padding-top: 5px;
-    padding-right: 30px;
-    padding-bottom: 80px;
-    padding-left: 5px;
+    padding: 5px 30px 80px 5px;
     margin-right: 10px;
     margin-bottom: 80px;
     
 }
 
-/**************************
-Trying to center pumpkin tree image, not div it's in
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-} 
-
-************************************/
 
 
 
-/*SIDEBAR*/
-
-/*
-************************************************************
-First layout attempt was one column and sidebar, trying three columns now
-h3 {
-    font-size:22px;
-}
-
-#home-sidebar {
-    float: right;
-    width: 200px;
-    margin-top: 130px;
-    background-color: #FF8300; 
-   
-    font-size: 20px;
-    list-style:none;
-    text-decoration: none;
-}
-  
 
 
-    
 
-
-ul.skull {
-/*list-style-image:src=("./images/small-skull.jpg")
-line-height: 20px;
-}
-
-#content {
-    overflow: hidden;
-    background: #FFF;
-}
-
-**********************************************************
-*/
-
-/* CONTENT PAGE 2 [CURRENTLY, "PATRON SAINT"]*/
+/*  "PATRON SAINT"*/
 
 .splash {
  background-image: url("../images/50percentraven.png");
@@ -254,8 +180,6 @@ background-repeat:
     margin-right: auto;
     padding:0;
     width: 50%;
-   
-    
 }
 
 #raven-quote {
@@ -325,83 +249,193 @@ th {
     color: white;
 }
 
-/* CONTENT PAGE 4 [CURRENTLY, "CONTACT US"]*/
 
-/*
-********************************************************
-.contact {
-  width: 600px;
-  height: 600px;
-  
-}.simple-linear {
-  background: linear-gradient(#FF8300,#FFFF33);
+
+
+* {
+    box-sizing: border-box;
 }
 
-*********************************************************
 
-*/
-    
-    
-    
-    
-/*
-********************************************
+
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+
+
+
+
+
+/* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+
+
+
+#scary-movie {
+    font-family: "Rokkitt", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#scary-movie td, #scary-movie th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#scary-movie tr:nth-child(even){background-color: #FF8300;}
+
+#scary-movie tr:hover {background-color: #ddd;}
+
+#scary-movie th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+
+
+
+/* "CONTACT US"]*/
+
+
+
+.splash1
+
 background-image: url("../images/60percentcrownedskull.png");
  background-repeat: 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+
+#email {
+    position: relative;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+   #email {
+    font-style: italic;
+    text-align: center;
+    font-size: 150%;
+    text-decoration: none;
 }
 
-**********************************************************
-*/
+#email a {
+    text-decoration: none;
+    color: black;
+}
 
-
-
-
-#contact-form {
-    font-style: italic;
-    font-size: 20px;
-    }
-    
-    
-
-
-
-
-/* FOOTER */
-/*.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #FF8300;
-   color: #000;
-   text-align: center;
-    border:2px solid black;
-    padding-top: 10px;
-    
-   
-   
-/*
-    #grad1 {
-    height: 150px;
-    width: 200px;
-    background: #FF8300; /* For browsers that do not support gradients */
-  /*  background: radial-gradient(#FF8300;, yellow); /* Standard syntax (must be last)
-  
-  }
-  
+#email a:visited {
+    color: #FF8300;
+}
  
 
+#email a:hover {
+    background-color: #FF8300;
+    color: black;
+}
 
 
-p {
-  text-align: center;
-    margin-top:0px;
-    font-weight: bold
-} 
+#email a:active {
+    background-color: white;
+    color: #A4AB96;
+}    
+  
+  
+  img {
+    float: right;
+}
 
+/*
+**********************************************************
+
+
+
+
+
+
+
+
+
+#contact-content1 {
+   text-align: center;
+   background-color: red;
+}
+
+
+
+#contact-content2
+#contact-content3
+#contact-content4
+#contact-content5
+
+
+    
+    
+    
+
+
+
+************************************************************
 */
 
 
+
+
+
+
+
+
+
+
+}

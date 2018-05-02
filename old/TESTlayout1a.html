@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+ <!-- ***********************************************
+ Last Updated 25 April 2018, 12:51 a.m.
+ **************************************************** -->
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Rokkitt|Special+Elite" rel="stylesheet"> 
+   <title>TEST LAYOUT 1a (Flexbox)</title> 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Rokkitt, Arial, Helvetica, sans-serif;
+    font-size:20px;
+    
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #FF8300;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+
+p.initial-letter:first-child:first-letter {
+  color: #FF8300;
+  float: left;
+  font-family: Rokkitt;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<img src="./images/Pumpkin3.png" alt="Pumpkin" class="center">
+    
+    <ul id="nav">
+  <li><a href="index.html">home</a></li> 
+  <li><a href="patron-saint.html">patron saint</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="contact-us.html">contact us</a></li>
+</ul>
+        
+  <p>Because Halloween is too much fun to celebrate only once a year.</p>     
+ 
+
+<br>
+<hr class="style1">
+ </br>  
+ 
+
+<div class="row">
+  <div class="column side" <style="background-color:#FF8300;">
+  
+  
+  <div id="pumpkin-tree">
+      <img src="./images/halloween-tree.jpg" width=120% alt="Tree decorated with Jack-o'-lanterns with a black cat and a crescent moon." title="Classic symbols of the holiday: A cat, Jack-o'-lanterns, and the moon.">
+      </div>
+  
+  
+  </div>
+  <div class="column middle" style="background-color:#FFF;">
+      
+      <div id="content">
+        <p class="initial-letter">
+            Welcome. What is exactly is <em><span style="font-weight:bold">&#8220;Apokriesphilia,&#8221;</span></em> you ask?  An excellent question.  It is an invented word formed by combining the Greek word for Halloween,&#8220;&Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf;,&#8221;(Ap&#x03CC;kries) with the Greek &#8220;philia&#8221; suffix, which means&#8220;a love of.&#8221; Therefore, it means &#8220;the love of Halloween.&#8221;  How is &Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf; <a href="https://www.google.com/search?q=greek+word+for+halloween&oq=gree&aqs=chrome.3.69i65j69i60j69i57j69i59j35i39j0.12533j0j7&sourceid=chrome&ie=UTF-8"><span style="color:#FF8300;font-weight:bold">pronounced</span></a>?  </p>
+            
+            <div>
+            
+            <img src="./images/bat.png" height="100px" class="center">
+            </div>
+           
+       </div> 
+       
+       
+      
+      </div>
+      
+      
+  <div class="column side" style="background-color: #FFF;">
+  
+          
+          <img src="./images/witch.jpg" width=100%>
+            
+        </ul>
+  
+  
+  
+  </div>
+</div>
+
+<footer>
+        <section>
+            <div id="footer">
+            <p class="footer">Countdown Clock Until Halloween</p>
+  <p id="countdown">Countdown Clock Until Halloween 2018</p>
+  
+  
+  <script src="js/myscripts.js"></script>
+  
+            
+            </div>
+        </section>  
+    </footer>    
+
+</body>
+</html>
+
+
+
+  
+  
+
+ 

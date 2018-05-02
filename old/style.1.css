@@ -1,0 +1,247 @@
+/* GLOBAL STYLES */
+
+body,
+html {
+  font-size: 20px;
+}
+
+#footer {
+  border-top: 5px solid black;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #FF8300;
+  height: 150px;
+}
+
+/*HEADER IMAGE*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img {
+  border: 2px solid #021a40;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-family: 'Rokkitt', serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center
+}
+
+/*
+************************************************************
+HORIZONTAL NAVIGATION BAR
+************************************************************
+*/
+
+#nav {
+  width: 750px;
+  margin: 0 auto;
+  list-style: none;
+  font-weight: bold;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav a {
+  display: block;
+  text-align: center;
+  width: 150px;
+  /* fixed width */
+  text-decoration: none;
+}
+
+#nav {
+  font-family: 'Rokkitt', serif;
+  text-transform: UPPERCASE;
+  text-shadow: 10px 10px 10px #FF8300;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav a:hover {
+  background-color: #FF8300;
+  color: black;
+  font-size: 120%;
+}
+
+#nav a:active {
+  background-color: white;
+  color: #A4AB96;
+}
+
+/*
+***************************************************************
+HORIZONTAL RULE BELOW NAVIGATION BAR
+**************************************************************
+*/
+
+hr.style1 {
+  border-top: 1px solid #FF8300;
+}
+
+/* CONTENT PAGE 3 [CURRENTLY, "RESOURCES"]*/
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: red;
+  height: 50px;
+}
+
+main {
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  padding-left: 980px;
+  position: relative;
+}
+
+main aside {
+  width: 380px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: peru;
+}
+
+@media screen and (max-width: 1279px) {
+  main {
+    overflow: scroll;
+    padding-left: 0;
+    background-color: purple;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: green;
+  width: 100%;
+  text-align: center;
+}
+
+/*
+***************************************
+original code
+***************************************
+
+
+
+#scary-movie {
+        border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #FF8300;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000;
+    color: white;
+}
+
+*/
+
+/* CONTENT PAGE 4 [CURRENTLY, "CONTACT US"]*/
+
+/*
+********************************************************
+.contact {
+  width: 600px;
+  height: 600px;
+  
+}.simple-linear {
+  background: linear-gradient(#FF8300,#FFFF33);
+}
+
+*********************************************************
+
+*/
+
+/*
+********************************************
+background-image: url("../images/60percentcrownedskull.png");
+ background-repeat: 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+**********************************************************
+*/
+
+#contact-form {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* FOOTER */
+
+/*.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #FF8300;
+   color: #000;
+   text-align: center;
+    border:2px solid black;
+    padding-top: 10px;
+    
+   
+   
+/*
+    #grad1 {
+    height: 150px;
+    width: 200px;
+    background: #FF8300; /* For browsers that do not support gradients */
+
+/*  background: radial-gradient(#FF8300;, yellow); /* Standard syntax (must be last)
+  
+  }
+  
+ 
+
+
+
+p {
+  text-align: center;
+    margin-top:0px;
+    font-weight: bold
+} 
+
+*/
