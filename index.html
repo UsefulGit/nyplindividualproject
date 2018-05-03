@@ -3,13 +3,15 @@
 
 
   <!-- ***********************************************
- Last Updated 2 May 2018, 6:15
+ Last Updated 2 May 2018, 22:30
  
- --Not happy with the layout of the pages, but after unsuccessfully experimenting with layout templates found online I can't spend anymore time on this.
+ --Not happy with the layout of the pages, but after unsuccessfully 
+ experimenting with layout templates found online I've had to move forward. 
+ Plan to learn CSS Grids and Flexbox as well Float property better to create layouts.
  
  --Wireframe shows desired layout, which was not achieved.
  
- --Unwanted inherited black border around images.
+ --Drop cap works on some pages, but not others.
  
  
  **************************************************** -->
@@ -30,49 +32,63 @@
   </head>
 
 
-
-
-
   <body>
 
+
+
     <!-- ***********************************************
+ 
  BANNER
+ 
  **************************************************** -->
 
-
-    <a href="index.html"><img src="./images/Pumpkin3.png" alt="Colorful vintage Image of pumpkin with surprised expression." class="center" style="width:650px;height:400px;" title="The Love  of Halloween."></a>
-
+    <header>
 
 
-
-    <div class="subtitle">Because Halloween is too much fun to celebrate only once a year.</div>
-
-    <ul id="nav">
-      <li><a href="index.html">home</a></li>
-      <li><a href="patron-saint.html">patron saint</a></li>
-      <li><a href="resources.html">resources</a></li>
-      <li><a href="contact-us.html">contact us</a></li>
-    </ul>
+      <a href="index.html"><img src="./images/Pumpkin3.png" alt="Colorful vintage Image of pumpkin with surprised expression." class="center" style="width:650px;height:400px;" title="The Love  of Halloween."></a>
 
 
 
 
+      <div class="subtitle">Because Halloween is too much fun to celebrate only once a year.</div>
 
-    <br>
-    <hr class="style1">
-    <br>
+      <!-- ***********************************************
 
+ HORIZONTAL NAVIGATION BAR
+ 
+ **************************************************** -->
+
+      <ul id="nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="patron-saint.html">patron saint</a></li>
+        <li><a href="resources.html">resources</a></li>
+        <li><a href="contact-us.html">contact us</a></li>
+      </ul>
+
+
+
+
+
+      <br>
+      <hr class="style1">
+      <br>
+
+    </header>
 
     <!-- ***********************************************
+
  CONTENT
+ 
  **************************************************** -->
 
 
     <div class="row">
+
       <div class="column side">
 
 
         <div id="pumpkin-tree">
+
           <img src="./images/halloween-tree.jpg" width="250px" alt="Tree decorated with Jack-o'-lanterns with a black cat and a crescent moon." title="Classic symbols of the holiday: A cat, Jack-o'-lanterns, and the moon.">
 
         </div>
@@ -88,11 +104,11 @@
             means "a love of." It means, therefore, <strong>"The love of Halloween."</strong>
 
             <p>
-              If you'd like to hear how &Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf; is pronounced, click <a href="https://www.google.com/search?q=greek+word+for+halloween&oq=gree&aqs=chrome.3.69i65j69i60j69i57j69i59j35i39j0.12533j0j7&sourceid=chrome&ie=UTF-8"><span style="color:#FF8300;font-weight:bold">here</span></a>.</p>
+              Want to hear how &Alpha;&pi;&#x03CC;&kappa;&rho;&iota;&epsilon;&sigmaf; is <a href="https://www.google.com/search?q=greek+word+for+halloween&oq=gree&aqs=chrome.3.69i65j69i60j69i57j69i59j35i39j0.12533j0j7&sourceid=chrome&ie=UTF-8"><span style="color:#FF8300;font-weight:bold">pronounced</span></a>?</p>
 
-            <div>
+            <div id="bat">
 
-              <img src="./images/bat.png" height="100px" class="center">
+              <img src="./images/bat.png" height="80px" class="center" title="About to join her friends to the right.">
             </div>
 
         </div>
@@ -105,7 +121,7 @@
       <div class="column side" style="background-color: #FFF;">
 
 
-        <img src="./images/witch.jpg" width="300px">
+        <a href="https://en.wikipedia.org/wiki/Witch_(word)"><img src="./images/witch.jpg" width="300px" title="On her commute."></a>
 
 
 
